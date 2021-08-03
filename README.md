@@ -1,6 +1,12 @@
 # React Calculator
 
+This is a simple calculator application developed to demonstrate React.js's functionality and for educational purposes.
 
+##Built With
+- React
+- JavaScript
+- HTML
+- CSS
 
 ## Getting Started
 To run a local copy of this application, follow the steps below:
