@@ -1,10 +1,29 @@
 # React Calculator
 
-## Built With
+
 
 ## Getting Started
-  
-# Project Screenshot
+To run a local copy of this application, follow the steps below:
+
+1. Open your terminal.
+2. Navigate to the desired location to download the contents of this repository.
+3. Copy and paste the following code into your terminal :
+   ```bash
+   $ git clone https://github.com/pipe2442/react-basic-calculator.git
+   ```
+4. Run `cd react-basic-calculator`
+5. Install your dependencies 
+    ```bash
+    $ npm install
+    ```
+6. run
+    ```bash
+    npm start
+    ``` 
+    
+### Usage
+Launch the local version of this project running `npm start` on your terminal.
+
 
 # Live Demo
 [Hosted on Github Pages](https://pipe2442.github.io/react-basic-calculator/)
