@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# React Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<<<<<<< calculator-milestone-1
+This is a simple calculator application developed to demonstrate React.js's functionality and for educational purposes.
 
-## Available Scripts
+##Built With
+- React
+- JavaScript
+- HTML
+- CSS
 
-In the project directory, you can run:
+## Getting Started
+To run a local copy of this application, follow the steps below:
 
-### `yarn start`
+1. Open your terminal.
+2. Navigate to the desired location to download the contents of this repository.
+3. Copy and paste the following code into your terminal :
+   ```bash
+   $ git clone https://github.com/pipe2442/react-basic-calculator.git
+   ```
+4. Run `cd react-basic-calculator`
+5. Install your dependencies 
+    ```bash
+    $ npm install
+    ```
+6. run
+    ```bash
+    npm start
+    ``` 
+    
+### Usage
+Launch the local version of this project running `npm start` on your terminal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Live Demo
+[Hosted on Github Pages](https://pipe2442.github.io/react-basic-calculator/)
 
-### `yarn test`
+## Authors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+👤 **Luis Felipe Angulo Torres**
 
-### `yarn build`
+- Github: [pipe2442](https://github.com/pipe2442)
+- Twitter: [@donCodigo_](https://twitter.com/donCodigo_)
+- Linkedin: [linkedin](https://www.linkedin.com/in/luis-felipe-angulo-torres-95098b139/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🤝 Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributions, issues and feature requests are welcome!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Feel free to check the [issues page](https://github.com/pipe2442/testing_practice/issues).
 
-### `yarn eject`
+## Show your support
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Give a ⭐️ if you like this project! 🤝 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Acknowledgments
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Thanks Microverse](https://github.com/microverseinc)
+  
+## 📝 License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+=======
+## Built With
 
-## Learn More
+## Getting Started
+  
+# Project Screenshot
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Live Demo
+[Hosted on Github Pages](https://pipe2442.github.io/react-basic-calculator/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤 **Luis Felipe Angulo Torres**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github: [pipe2442](https://github.com/pipe2442)
+- Twitter: [@donCodigo_](https://twitter.com/donCodigo_)
+- Linkedin: [linkedin](https://www.linkedin.com/in/luis-felipe-angulo-torres-95098b139/)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues and feature requests are welcome!
 
-### Making a Progressive Web App
+Feel free to check the [issues page](https://github.com/pipe2442/testing_practice/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project! 🤝 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
+- [Thanks Microverse](https://github.com/microverseinc)
+  
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>>>>>>> development
+This project is [MIT](LICENSE) licensed.
