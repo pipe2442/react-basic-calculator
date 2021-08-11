@@ -13,7 +13,7 @@ export default function operate(numberOne, numberTwo, operation) {
   } else if (operation === '÷') {
     result = one.div(two);
   } else if (operation === '%') {
-    result = (two.div(100)).times(one);
+    result = (two.div(100));
   }
   return result.toString();
 }

@@ -12,8 +12,7 @@ const data = {
 const App = () => (
   <>
     <ButtonPanel />
-    <Display result={Calculate(data.total, data.next, data.operation)} />
-    <Display result="5" />
+    <Display result={Calculate(data, data.operation)} />
   </>
 );
 
