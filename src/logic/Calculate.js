@@ -10,7 +10,7 @@ export default function calculate(dataObject, symbol) {
   if (symbol === 'X') {
     return {
       total: `${operate(next, total, operation)}`,
-      next: '0',
+      next: null,
       operation: 'X',
     };
   }
@@ -19,7 +19,7 @@ export default function calculate(dataObject, symbol) {
     return {
       total: `${operate(next, total, operation)}`,
       operation: '/',
-      next: '',
+      next: null,
     };
   }
 
@@ -34,7 +34,7 @@ export default function calculate(dataObject, symbol) {
   if (symbol === '+') {
     return {
       total: `${operate(next, total, operation)}`,
-      next: '0',
+      next: null,
       operation: '+',
     };
   }
@@ -42,15 +42,15 @@ export default function calculate(dataObject, symbol) {
   if (symbol === '-') {
     return {
       total: `${operate(next, total, operation)}`,
-      next: '0',
+      next: null,
       operation: '-',
     };
   }
   if (symbol === '=') {
     return {
       next: `${operate(next, total, operation)}`,
-      operation: '=',
-      total,
+      operation: null,
+      total: null,
     };
   }
 

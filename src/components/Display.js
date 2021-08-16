@@ -3,17 +3,15 @@ import PropTypes from 'prop-types';
 const Display = (props) => {
   const { result, next, operation } = props;
   return (
-    <div>
-      <h2 className="result">
-        {result}
-        {operation}
-        {next}
-      </h2>
+    <div className="result">
+      <h1 className="resultNumber">{result}</h1>
+      <h1 className="resultNumber">{operation}</h1>
+      <h1 className="resultNumber">{next}</h1>
     </div>
   );
 };
 
-Display.defaultProps = { result: '0', next: '0', operation: '0' };
+Display.defaultProps = { result: null, next: null, operation: null };
 Display.propTypes = {
   result: PropTypes.string,
   next: PropTypes.string,

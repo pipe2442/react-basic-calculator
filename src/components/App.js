@@ -23,9 +23,12 @@ class AppComponent extends React.Component {
   render() {
     const { total, next, operation } = this.state;
     return (
-      <div className="calculator">
-        <Display result={total} next={next} operation={operation} />
-        <ButtonPanel clickHandler={this.handleClick} />
+      <div>
+        <h1 className="title">React Calculator</h1>
+        <div className="calculator">
+          <Display result={total} next={next} operation={operation} />
+          <ButtonPanel clickHandler={this.handleClick} />
+        </div>
       </div>
     );
   }
