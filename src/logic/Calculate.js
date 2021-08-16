@@ -1,21 +1,74 @@
-import Operate from './Operate';
+import operate from './Operate';
 
-export default function calculate(data, buttonName) {
-  let { total, next, operation } = data;
-  if (buttonName === 'AC') {
+export default function calculate(dataObject, symbol) {
+  const { total, next, operation } = dataObject;
+
+  if (symbol === 'AC') {
     return { total: null, next: null, operation: null };
-  } if (buttonName === '.') {
-    if (next === null) {
-      total = total === '0' ? '0.' : total += '.';
-    } else {
-      next += '.';
-    }
-    return { next, operation, total };
   }
-  operation = buttonName;
-  return {
-    total: `${Operate(next, total, operation)}`,
-    next: '0',
-    operation: buttonName,
-  };
+
+  if (symbol === 'X') {
+    return {
+      total: `${operate(next, total, operation)}`,
+      next: '0',
+      operation: 'X',
+    };
+  }
+
+  if (symbol === '/') {
+    return {
+      total: `${operate(next, total, operation)}`,
+      operation: '/',
+      next: '',
+    };
+  }
+
+  if (symbol === '%') {
+    return {
+      total: `${operate(next, total, operation)}`,
+      next: null,
+      operation: '%',
+    };
+  }
+
+  if (symbol === '+') {
+    return {
+      total: `${operate(next, total, operation)}`,
+      next: '0',
+      operation: '+',
+    };
+  }
+
+  if (symbol === '-') {
+    return {
+      total: `${operate(next, total, operation)}`,
+      next: '0',
+      operation: '-',
+    };
+  }
+  if (symbol === '=') {
+    return {
+      next: `${operate(next, total, operation)}`,
+      operation: '=',
+      total,
+    };
+  }
+
+  if (symbol === '+/-') {
+    return {
+      next: `${next * (-1)}`,
+      operation,
+      total,
+    };
+  }
+
+  if (next === null) {
+    return {
+      next: parseFloat(`${symbol}`, 10),
+      operation,
+      total,
+    };
+  }
+
+  return { next: parseFloat(`${next}${symbol}`, 10), operation, total };
 }

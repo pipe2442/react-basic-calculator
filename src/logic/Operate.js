@@ -1,19 +1,34 @@
 const Big = require('big.js');
 
-export default function operate(numberOne, numberTwo, operation) {
-  const one = new Big(numberOne);
-  const two = new Big(numberTwo);
+export default function operate(next, total, operation) {
+  const firstNumber = next !== null ? new Big(next) : new Big('0');
+  const secondNumber = total !== null ? new Big(total) : new Big('0');
+  const multiply = secondNumber === '0' ? 1 : secondNumber;
+
   let result = 0;
-  if (operation === '+') {
-    result = one.plus(two);
-  } else if (operation === '-') {
-    result = one.minus(two);
-  } else if (operation === 'X') {
-    result = one.times(two);
-  } else if (operation === '÷') {
-    result = one.div(two);
-  } else if (operation === '%') {
-    result = (two.div(100));
+  switch (operation) {
+    case '+':
+      result = firstNumber.plus(secondNumber);
+      break;
+    case '-':
+      result = secondNumber.minus(firstNumber);
+      break;
+    case '/':
+      result = multiply.div(firstNumber);
+      break;
+    case '%':
+      if (next === null) {
+        result = secondNumber.div(100);
+        break;
+      } else {
+        result = secondNumber.div(100).mul(firstNumber);
+        break;
+      }
+    case 'X':
+      result = firstNumber.mul(multiply);
+      break;
+    default:
+      result = firstNumber;
   }
-  return result.toString();
+  return result;
 }
