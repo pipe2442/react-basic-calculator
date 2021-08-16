@@ -1,6 +1,4 @@
 # React Calculator
-
-<<<<<<< calculator-milestone-1
 This is a simple calculator application developed to demonstrate React.js's functionality and for educational purposes.
 
 ##Built With
@@ -8,6 +6,11 @@ This is a simple calculator application developed to demonstrate React.js's func
 - JavaScript
 - HTML
 - CSS
+
+![screenshot](https://github.com/pipe2442/react-basic-calculator/blob/fifth-milestone/src/Assets/reactWall.jpg)
+
+# Project Screen
+![screenshot](https://github.com/pipe2442/react-basic-calculator/blob/fifth-milestone/src/Assets/calculatorScreen.PNG)
 
 ## Getting Started
 To run a local copy of this application, follow the steps below:
