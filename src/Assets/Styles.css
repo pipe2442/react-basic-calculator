@@ -2,42 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .button {
-    background: #262834 ;
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    border-color: #262834;
-    font-family: 'Exo 2', sans-serif;
+  background: #262834;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: #262834;
+  font-family: 'Exo 2', sans-serif;
 }
-.buttonContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(60px, auto);
-    text-align: center;
-    background-color: black;
-    margin-top: 50px;
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  text-align: center;
+  background-color: black;
+  margin-top: 50px;
 }
+
 .result {
-    color: white;
-    margin: 0;
-    font-family: 'Exo 2', sans-serif;
-    font-size: x-large;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
+  color: white;
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
 }
+
 .resultNumber {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
 .calculator {
-    background-color: black;
-    margin: 25px;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: black;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .title {
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 300%;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 300%;
 }
