@@ -45,3 +45,25 @@
   font-family: 'Permanent Marker', cursive;
   font-size: 300%;
 }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 45px;
+}
+
+.nav nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.font {
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+}
